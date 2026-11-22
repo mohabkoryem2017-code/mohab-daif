@@ -19,7 +19,7 @@
     .orbit-settings-row{display:flex;align-items:center;gap:12px}.orbit-settings-avatar{width:58px;height:58px;object-fit:cover;border-radius:18px;background:#d8f18e;display:grid;place-items:center;color:#274c3a;font-weight:700;flex:none}
     .orbit-settings-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}.orbit-settings-actions button,.orbit-settings-card button{border:1px solid #e9ece6;background:#fff;border-radius:10px;padding:10px 12px;font:inherit;font-size:10px;color:#18221f}
     .orbit-settings-actions .danger{border-color:#f2d3ca;color:#9a3d2a}.orbit-settings-note{background:#f5f8f1;border-radius:13px;padding:12px;color:#53645a;font-size:9px;line-height:1.9}
-    .orbit-settings-status{display:inline-flex;align-items:center;gap:6px;border-radius:20px;background:#fff1e8;color:#92502f;padding:5px 9px;font-size:9px;margin-bottom:10px}
+    .orbit-settings-status{display:inline-flex;align-items:center;gap:6px;border-radius:20px;background:#fff1e8;color:#92502f;padding:5px 9px;font-size:9px;margin-bottom:10px}.orbit-settings-status.orbit-ai-ready{background:#edf5e7;color:#274c3a}
     .orbit-mic{border:1px solid #e9ece6!important;background:#fff!important;color:#274c3a!important;padding:0 12px!important;min-width:42px}
     .orbit-mic.listening{background:#fff1e8!important;color:#9a3d2a!important;border-color:#ef936c!important}
     @media(max-width:650px){.orbit-settings-grid{grid-template-columns:1fr}.orbit-settings-card{padding:16px}}
@@ -53,9 +53,9 @@
       <div class="orbit-settings-actions"><button id="orbitExportData">تنزيل نسخة من بيانات هذا الجهاز</button><button id="orbitClearData" class="danger">مسح بيانات Orbit من هذا الجهاز</button></div>
     </div>
     <div class="orbit-settings-card">
-      <h2>مساعد Orbit الذكي</h2><div class="orbit-settings-status">التوصيل بالخدمة لم يكتمل بعد</div>
+      <h2>مساعد Orbit الذكي</h2><div class="orbit-settings-status orbit-ai-ready">إعداد تجريبي جاهز · سجّل الدخول للاختبار</div>
       <p>وافقت على اختبار Gemini المجاني ببيانات وهمية فقط. لن تُرسل بياناتك أو بيانات العملاء للاختبار. مفتاح الخدمة يجب أن يُحفظ في الخادم، وليس داخل ملفات التطبيق العامة.</p>
-      <div class="orbit-settings-note">لما نجهز الاتصال، المساعد هيقدر يفهم طلبك، يبحث في سجلاتك، ويعرض عليك التغييرات للمراجعة قبل حفظها.</div>
+      <div class="orbit-settings-note">المتاح الآن ٣ أمثلة خيالية عبر Gemini. الأسئلة المفتوحة والبحث داخل سجلاتك لا تستخدم Gemini بعد، فلا تدخل بيانات عملاء حقيقية في الاختبار.</div>
     </div>
   `;
   main.insertBefore(section, assistant.nextSibling);
