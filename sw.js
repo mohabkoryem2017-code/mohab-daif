@@ -1,5 +1,5 @@
-const CACHE = 'orbit-shell-v2';
-const ASSETS = ['./', './index.html', './manifest.json', './icon.svg', './settings.js'];
+const CACHE = 'orbit-shell-v3';
+const ASSETS = ['./', './index.html', './manifest.json', './icon.svg', './settings.js', './supabase-config.js'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
   self.skipWaiting();
