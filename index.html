@@ -50,4 +50,4 @@ $('#notifyBtn').onclick=async()=>{if(!('Notification'in window)){toast('الإش
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;$('#installBtn').style.display='block'});$('#installBtn').onclick=async()=>{if(!deferredInstall)return;deferredInstall.prompt();await deferredInstall.userChoice;deferredInstall=null};if('serviceWorker'in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script><script>
 // Boot labels and make a weekly reminder sample available only when the user saves it.
-</script></body></html>
+</script><script src="settings.js"></script></body></html>
