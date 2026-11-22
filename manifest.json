@@ -1,0 +1,13 @@
+{
+  "name": "Orbit — يومك في مدار واحد",
+  "short_name": "Orbit",
+  "description": "مواعيدك وتمرينك وشغلك العقاري في مكان واحد",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f6f1",
+  "theme_color": "#f5f6f1",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
